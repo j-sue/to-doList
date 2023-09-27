@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+<body>
+    <h1>Hello it's a <%=myDay %>!</h1>
+
+    <h2>It's Weekday!</h2>
+    <h2>Get up and code</h2>
+    <div id="list">
+    <ul>
+        <li>Agahan</li>
+        <li>kailangan mo nang maligo</li>
+        <li>tara sa lomian</li>
+        <% for (let i=0; i<AddedItem.length; i++) {%>
+            <li> <%= AddedItem [i] %> </li>
+            <%}%>
+    </ul>
+    <form action="" method="post">
+        <input type="text" name="addItem">
+        <button type="submit" name="button">Add</button>
+    </form></div>
+</body>
+<%- include('footer'); -%>
